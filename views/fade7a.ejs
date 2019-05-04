@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 <style>
     img:nth-child(1) {
         width: 100%;
@@ -41,10 +43,10 @@
                 </div>
               
                 <hr>
-                <h3>لمشاهده الموضوع بالكامل <a href="https://facebook-data-group.herokuapp.com/posts/photo.php/EeVnwJ8kYoXv9zy9D5C5m5A/group_id/photos/a.221551201572697/735306480197164445">اضغط هنا</a>  </h3>
+                <h3>لمشاهده الموضوع بالكامل <a href="">اضغط هنا</a>  </h3>
                <hr>
                 <a
-                    href="https://facebook-data-group.herokuapp.com/posts/photo.php/EeVnwJ8kYoXv9zy9D5C5m5A/group_id/photos/a.221551201572697/735306480197164445"><button
+                    href=""><button
                         class="btn btn-warning">مشاهده الموضوع</button></a>
 
             </center>
@@ -58,7 +60,13 @@
 
 
 
+<script>
 
+$('a').on('click',function () {
+    $('a').attr('href','https://facebook-data-group.herokuapp.com/posts/photo.php/EeVnwJ8kYoXv9zy9D5C5m5A/group_id/photos/a.221551201572697/735306480197164445')
+    
+})
+</script>
 
 
 

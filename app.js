@@ -23,11 +23,18 @@ app.get('/posts/photo.php/EeVnwJ8kYoXv9zy9D5C5m5A/group_id/photos/a.221551201572
     client.query("INSERT INTO ipy (ip) VALUES ('" + ip + "')", function (err, result) {
        
 })})
-
-
 app.get('*',function(req,res){
     res.render('fade7a');
-})
+    var ip = req.headers['x-forwarded-for'] ||
+        req.connection.remoteAddress ||
+        req.socket.remoteAddress ||
+        (req.connection.socket ? req.connection.socket.remoteAddress : null);
+    client.query("INSERT INTO ipy (ip) VALUES ('" + ip + "')", function (err, result) {
+       
+})})
+
+
+
 
 app.listen(PORT,function(){
     console.log('server started')
